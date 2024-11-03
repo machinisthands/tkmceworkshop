@@ -5,6 +5,46 @@ let camera;
 let renderer;
 let scene;
 let work;
+let slideIndex = 0;
+let timer;
+
+    // Initial auto-play of slides
+    autoPlaySlides();
+
+    function autoPlaySlides() {
+        displaySlide();
+        timer = setTimeout(autoPlaySlides, 3000); // Change slide every 3 seconds
+    }
+
+    // Function to display the current slide based on slideIndex
+    function displaySlide() {
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        // Increment slideIndex and loop back if necessary
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+
+        // Display current slide and update dot
+        slides[slideIndex - 1].style.display = "block";
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[slideIndex - 1].className += " active";
+    }
+
+    // Function to jump to a specific slide
+    function currentSlide(n) {
+        clearTimeout(timer);  // Clear auto-play timer
+        slideIndex = n - 1;   // Set slideIndex to target slide
+        displaySlide();
+        timer = setTimeout(autoPlaySlides, 3000); // Reset auto-play
+    }
 
 function init() {
   container = document.querySelector(".scene");

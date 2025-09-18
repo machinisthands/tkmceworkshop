@@ -1,0 +1,131 @@
+/* Full-screen overlay */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20000;
+}
+
+/* Spinner styling */
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+body{
+  font-family: sans-serif
+}
+
+.bg-black{
+  background-color: #1a1a1a;
+}
+
+.bg-black2{
+  background-color: #312f2f;
+}
+.head-text{
+  padding-top: 6em;
+}
+
+
+.collapse a{
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.collapse a:hover{
+  background-color: rgb(197, 173, 181);
+}
+
+.dropdown li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.dropdown li:hover{
+  background-color: rgb(197, 173, 181);
+}
+
+.scene{
+  position: absolute;
+  width: 83%;
+  height: 31em;
+  background: linear-gradient(to right bottom,#948a8a,#383030);
+
+}
+
+
+.canvas {
+  width: 80%;
+  height: 31em;
+}
+
+
+.dot-container {
+  text-align: center;
+  padding: 10px;
+  background: #1a1a1a;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+

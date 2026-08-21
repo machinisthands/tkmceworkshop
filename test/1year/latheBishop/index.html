@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+
+
+    <!-- =====================================================
+         BOOTSTRAP & CUSTOM CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet"
+          href="./css/style.css">
+
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link rel="icon"
+          type="image/png"
+          href="./images/mechanicalWorkshopLogo.png">
+
+
+    <!-- =====================================================
+         SEO
+    ====================================================== -->
+
+    <title>
+        Lathe Bishop – CNC Turning | Mechanical Workshop
+    </title>
+
+
+    <meta name="description"
+          content="Lathe Bishop CNC turning project featuring an engineering drawing, interactive 3D model, machining operations, CNC program, machining video and downloadable workshop resources.">
+
+
+    <meta name="keywords"
+          content="Lathe Bishop, CNC Lathe, CNC Turning, Mechanical Workshop, CNC Program, Engineering Drawing, Three.js, CNC Machining, TKM College of Engineering">
+
+
+    <meta name="author"
+          content="Machinist Hands">
+
+
+    <link rel="canonical"
+          href="https://machinisthands.github.io/tkmceworkshop/1year/latheBishop/index.html">
+
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta property="og:type"
+          content="website">
+
+
+    <meta property="og:title"
+          content="Lathe Bishop – CNC Turning | Mechanical Workshop">
+
+
+    <meta property="og:description"
+          content="Interactive learning resource for CNC Lathe Bishop including engineering drawing, 3D model, machining operations, CNC program, video demonstration and downloadable resources.">
+
+
+    <meta property="og:url"
+          content="https://machinisthands.github.io/tkmceworkshop/1year/latheBishop/index.html">
+
+
+    <meta property="og:image"
+          content="https://machinisthands.github.io/tkmceworkshop/1year/latheBishop/image/06.jpg">
+
+
+    
+
+</head>
+
+
+<body class="bg-black">
+
+
+<!-- =========================================================
+     LOADING SCREEN
+========================================================= -->
+
+<div id="loading-screen">
+
+    <div class="spinner"></div>
+
+</div>
+
+
+<!-- =========================================================
+     HEADER / NAVIGATION
+========================================================= -->
+
+<header class="bg-black2"
+        style="
+            position:fixed;
+            width:100%;
+            z-index:20000;
+        ">
+
+    <div class="row pt-1 pb-1 pl-3 text-white">
+
+
+        <!-- LOGO -->
+
+        <div class="col-md-4 col-7">
+
+            <a href="./index.html">
+
+                <img src="./images/mechanicalWorkshop.png"
+                     alt="Mechanical Workshop"
+                     class="img-fluid"
+                     style="width:15em;">
+
+            </a>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="col-md-8 col-5 my-auto">
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+                <button class="navbar-toggler ml-auto"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        style="background-color:#232224;">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <div class="collapse navbar-collapse"
+                     id="navbarSupportedContent">
+
+
+                    <ul class="navbar-nav ml-auto">
+
+
+                        <!-- DRAWING -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link text-white"
+                               href="#drawing">
+
+                                DRAWING
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- 3D MODEL -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link text-white"
+                               href="#model">
+
+                                3D MODEL
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- OPERATIONS -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link text-white"
+                               href="#operations">
+
+                                OPERATIONS
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- CNC PROGRAM -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link text-white"
+                               href="#cnc-program">
+
+                                CNC PROGRAM
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- VIDEO -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link text-white"
+                               href="#video">
+
+                                VIDEO
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- DOWNLOADS -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link text-white"
+                               href="#downloads">
+
+                                DOWNLOADS
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- OTHER PROJECTS -->
+
+                        <li class="nav-item">
+
+                            <a class="nav-link text-white"
+                               href="../latheBowl/index.html">
+
+                                LATHE BOWL
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link text-white"
+                               href="../latheRook/index.html">
+
+                                LATHE ROOK
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link text-white"
+                               href="../edmScooter/index.html">
+
+                                EDM SCOOTER
+
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main id="top"
+      style="padding-top:5.5em;">
+
+
+<!-- =========================================================
+     HERO / INTRODUCTION
+========================================================= -->
+
+<section class="head-text">
+
+    <div class="container">
+
+        <p class="text-white mb-2">
+            01 / CNC TURNING PROJECT
+        </p>
+
+
+        <h1 class="text-white font-weight-bold">
+
+            CNC LATHE BISHOP
+
+        </h1>
+
+
+        <p class="text-white">
+
+            A CNC turning workshop project demonstrating
+            engineering drawing, 3D modelling, machining
+            operations and CNC programming.
+
+        </p>
+
+
+        <p class="text-white">
+
+            Study the drawing first, explore the interactive
+            3D model, understand the machining operations,
+            examine the CNC program and watch the machining
+            demonstration.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     DRAWING
+========================================================= -->
+
+<section id="drawing"
+         class="text-white pt-4 pb-5">
+
+    <div class="container">
+
+
+        <p class="mb-2">
+            02 / ENGINEERING DRAWING
+        </p>
+
+
+        <h2 class="font-weight-bold">
+
+            Engineering Drawing
+
+        </h2>
+
+
+        <p>
+
+            Study the engineering drawing before examining
+            the 3D model and machining process.
+
+        </p>
+
+
+        <div class="row mt-4">
+
+            <div class="col-12">
+
+                <img src="./Engineering Drawing.jpg"
+                     alt="CNC Lathe Bishop Engineering Drawing"
+                     class="img-fluid rounded mx-auto d-block"
+                     style="width:100%;">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     3D MODEL
+========================================================= -->
+
+<section id="model"
+         class="head-text pt-5 pb-5">
+
+    <div class="container">
+
+
+        <p class="text-white mb-2">
+
+            03 / DIGITAL MODEL
+
+        </p>
+
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+
+            <h2 class="text-white font-weight-bold">
+
+                Interactive 3D Model
+
+            </h2>
+
+
+            <button id="reset-model"
+                    type="button"
+                    class="btn btn-outline-light">
+
+                RESET VIEW
+
+            </button>
+
+
+        </div>
+
+
+        <p id="model-status"
+           class="text-white mt-3">
+
+            Preparing 3D viewer...
+
+        </p>
+
+
+        <p class="text-white">
+
+            Rotate the model using the mouse or touch.
+            Use the mouse wheel to zoom.
+
+        </p>
+
+
+        <!-- =================================================
+             THREE.JS CONTAINER
+        ================================================== -->
+
+        <div class="container-fluid px-0 mt-3">
+
+            <div class="scene rounded"
+                 id="model-viewer">
+
+                <div id="model-message"
+                     style="
+                        min-height:400px;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        text-align:center;
+                        color:white;
+                        padding:30px;
+                     ">
+
+                    <div>
+
+                        <h3>
+
+                            Loading 3D Model
+
+                        </h3>
+
+
+                        <p>
+
+                            Please wait while the
+                            CNC Lathe Bishop model
+                            is loaded.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <p class="text-white small mt-3">
+
+            Model file:
+            <code>./model/latheBishop.gltf</code>
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     OPERATIONS
+========================================================= -->
+
+<section id="operations"
+         class="text-white pt-5 pb-5">
+
+    <div class="container">
+
+
+        <p class="mb-2">
+
+            04 / MACHINING PROCESS
+
+        </p>
+
+
+        <h2 class="font-weight-bold">
+
+            CNC Machining Operations
+
+        </h2>
+
+
+        <p>
+
+            The Lathe Bishop is manufactured through a
+            sequence of turning operations. The operations
+            below provide an overview of the machining process.
+
+        </p>
+
+
+        <div class="row mt-4">
+
+
+            <!-- OPERATION 01 -->
+
+            <div class="col-md-6 mb-4">
+
+                <div class="border rounded p-4 h-100">
+
+                    <h3>
+
+                        01. Facing
+
+                    </h3>
+
+
+                    <p>
+
+                        The end face of the raw material is
+                        machined to establish a suitable
+                        reference surface and overall work
+                        length.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- OPERATION 02 -->
+
+            <div class="col-md-6 mb-4">
+
+                <div class="border rounded p-4 h-100">
+
+                    <h3>
+
+                        02. Rough Turning
+
+                    </h3>
+
+
+                    <p>
+
+                        Material is removed from the workpiece
+                        to approach the required external
+                        diameters and basic profile.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- OPERATION 03 -->
+
+            <div class="col-md-6 mb-4">
+
+                <div class="border rounded p-4 h-100">
+
+                    <h3>
+
+                        03. Profile / Finish Turning
+
+                    </h3>
+
+
+                    <p>
+
+                        Finishing cuts are used to produce the
+                        required contour, diameters and
+                        surface profile of the component.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- OPERATION 04 -->
+
+            <div class="col-md-6 mb-4">
+
+                <div class="border rounded p-4 h-100">
+
+                    <h3>
+
+                        04. Grooving / Detail Machining
+
+                    </h3>
+
+
+                    <p>
+
+                        Special tool movements are used where
+                        required to produce grooves, steps and
+                        other detailed features.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- OPERATION 05 -->
+
+            <div class="col-md-6 mb-4">
+
+                <div class="border rounded p-4 h-100">
+
+                    <h3>
+
+                        05. Chamfering / Finishing
+
+                    </h3>
+
+
+                    <p>
+
+                        Edges and selected surfaces are finished
+                        to achieve the required profile and
+                        remove unwanted sharp edges.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- OPERATION 06 -->
+
+            <div class="col-md-6 mb-4">
+
+                <div class="border rounded p-4 h-100">
+
+                    <h3>
+
+                        06. Final Inspection
+
+                    </h3>
+
+
+                    <p>
+
+                        The finished component is checked against
+                        the engineering drawing for dimensions,
+                        profile and overall quality.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="text-center mt-3">
+
+            <a href="#cnc-program"
+               class="btn btn-outline-light">
+
+                VIEW CNC PROGRAM
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CNC PROGRAM
+========================================================= -->
+
+<section id="cnc-program"
+         class="head-text pt-5 pb-5">
+
+    <div class="container">
+
+
+        <p class="text-white mb-2">
+
+            05 / CNC PROGRAM
+
+        </p>
+
+
+        <h2 class="text-white font-weight-bold">
+
+            CNC Turning Program
+
+        </h2>
+
+
+        <p class="text-white">
+
+            The CNC program contains the tool movements,
+            cutting operations and machining instructions
+            required to manufacture the Lathe Bishop.
+
+        </p>
+
+
+        <!-- PROGRAM DISPLAY -->
+
+        <div class="border rounded p-3 mt-4">
+
+            <pre class="text-white mb-0"
+                 style="
+                    white-space:pre-wrap;
+                    overflow-x:auto;
+                    font-family:monospace;
+                 ">%
+O0001
+(LATHE BISHOP)
+
+G21
+G90
+G95
+
+( CNC TURNING PROGRAM )
+( REFER TO PROCESS GUIDE FOR COMPLETE PROGRAM )
+
+G00 X0 Z5
+
+( MACHINING OPERATIONS )
+
+G00 X0 Z0
+
+( INSERT COMPLETE CNC PROGRAM
+  FROM THE PROCESS GUIDE HERE )
+
+G00 Z5
+M05
+M30
+%</pre>
+
+        </div>
+
+
+        <div class="text-center mt-4">
+
+            <a href="./latheBishop.pdf"
+               class="btn btn-outline-light"
+               target="_blank">
+
+                OPEN COMPLETE CNC PROGRAM
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VIDEO
+========================================================= -->
+
+<section id="video"
+         class="text-white pt-5 pb-5">
+
+    <div class="container">
+
+        <p class="mb-2">
+            06 / MACHINING VIDEO
+        </p>
+
+        <h2 class="font-weight-bold">
+            CNC Lathe Machining Video
+        </h2>
+
+        <p>
+            Watch the CNC machining demonstration of the
+            Lathe Bishop component.
+        </p>
+
+        <div class="border rounded p-5 mt-4 text-center">
+
+            <h3 class="font-weight-bold">
+                CNC Lathe Bishop Machining Demonstration
+            </h3>
+
+            <p class="mt-3">
+                Watch the complete machining demonstration
+                on YouTube.
+            </p>
+
+            <a
+                class="btn btn-outline-light btn-lg mt-2"
+                href="https://youtu.be/RrjOVsi-XHs"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                ▶ WATCH ON YOUTUBE
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     DOWNLOADS
+========================================================= -->
+
+<section id="downloads"
+         class="head-text pt-5 pb-5">
+
+    <div class="container">
+
+
+        <p class="text-white mb-2">
+
+            07 / RESOURCES
+
+        </p>
+
+
+        <h2 class="text-white font-weight-bold">
+
+            Downloads & References
+
+        </h2>
+
+
+        <p class="text-white">
+
+            Download or open the workshop resources related
+            to the CNC Lathe Bishop project.
+
+        </p>
+
+
+        <div class="row mt-4">
+
+
+            <!-- ENGINEERING DRAWING -->
+
+            <div class="col-md-4 mb-3">
+
+                <div class="border rounded p-4 text-center h-100">
+
+                    <h4 class="text-white">
+
+                        Engineering Drawing
+
+                    </h4>
+
+
+                    <p class="text-white">
+
+                        View the engineering drawing
+                        of the Lathe Bishop.
+
+                    </p>
+
+
+                    <a href="./Engineering Drawing.jpg"
+                       class="btn btn-outline-light"
+                       target="_blank">
+
+                        VIEW DRAWING
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROCESS GUIDE -->
+
+            <div class="col-md-4 mb-3">
+
+                <div class="border rounded p-4 text-center h-100">
+
+                    <h4 class="text-white">
+
+                        Process Guide
+
+                    </h4>
+
+
+                    <p class="text-white">
+
+                        CNC machining process and
+                        program reference.
+
+                    </p>
+
+
+                    <a href="./latheBishop.pdf"
+                       class="btn btn-outline-light"
+                       target="_blank">
+
+                        OPEN PDF
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PDF DOWNLOAD -->
+
+            <div class="col-md-4 mb-3">
+
+                <div class="border rounded p-4 text-center h-100">
+
+                    <h4 class="text-white">
+
+                        Download PDF
+
+                    </h4>
+
+
+                    <p class="text-white">
+
+                        Download the complete
+                        Lathe Bishop process guide.
+
+                    </p>
+
+
+                    <a href="./latheBishop.pdf"
+                       class="btn btn-outline-light"
+                       download>
+
+                        DOWNLOAD PDF
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ADDITIONAL INFORMATION -->
+
+        <div class="text-center mt-4">
+
+            <a class="btn btn-outline-light"
+               href="https://youtube.com/playlist?list=PLtw97_u_q2htmLj8iHorb3jEgDHC8eSfT"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                ADDITIONAL INFORMATION & REFERENCES
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECT NAVIGATION
+========================================================= -->
+
+<section class="text-white pt-4 pb-5">
+
+    <div class="container">
+
+
+        <h3 class="font-weight-bold text-center">
+
+            Other Workshop Projects
+
+        </h3>
+
+
+        <div class="row mt-4">
+
+
+            <div class="col-md-4 mb-3 text-center">
+
+                <a href="../latheBowl/index.html"
+                   class="btn btn-outline-light">
+
+                    LATHE BOWL
+
+                </a>
+
+            </div>
+
+
+            <div class="col-md-4 mb-3 text-center">
+
+                <a href="../latheRook/index.html"
+                   class="btn btn-outline-light">
+
+                    LATHE ROOK
+
+                </a>
+
+            </div>
+
+
+            <div class="col-md-4 mb-3 text-center">
+
+                <a href="../edmScooter/index.html"
+                   class="btn btn-outline-light">
+
+                    EDM SCOOTER
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="p-4">
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="col-md-12 text-center text-white">
+
+                <p class="pt-3 font-weight-bold">
+
+                    Copyright © 2026
+                    <br>
+
+                    Created by
+
+                    <a href="https://machinisthands.blogspot.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       style="
+                           text-decoration:none;
+                           display:inline-block;
+                           color:white;
+                       ">
+
+                        Machinist Hands
+
+                    </a>
+
+                </p>
+
+
+                <p class="small">
+
+                    CNC Lathe Bishop |
+                    Mechanical Workshop
+
+                </p>
+
+
+                <a href="#top"
+                   class="btn btn-sm btn-outline-light">
+
+                    BACK TO TOP
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT LIBRARIES
+========================================================= -->
+
+<script src="./js/jquery.min.js"></script>
+
+<script src="./js/popper.min.js"></script>
+
+<script src="./js/bootstrap.min.js"></script>
+
+
+<!-- THREE.JS -->
+
+<script src="./js/three.min.js"></script>
+
+
+<!-- GLTF LOADER -->
+
+<script src="./js/GLTFLoader.js"></script>
+
+
+<!-- YOUR THREE.JS APPLICATION -->
+
+<script src="./js/app.js"></script>
+
+
+
+<!-- =========================================================
+     PAGE LOADING
+========================================================= -->
+
+<script>
+
+    window.addEventListener(
+        "load",
+        function () {
+
+            const loadingScreen =
+                document.getElementById(
+                    "loading-screen"
+                );
+
+
+            if (loadingScreen) {
+
+                loadingScreen.style.display =
+                    "none";
+
+            }
+
+        }
+    );
+
+</script>
+
+
+</body>
+
+</html>

@@ -542,7 +542,7 @@
 
                     <h3>
 
-                        01. Stopper
+                        01. Stopper / Workpiece positioning
 
                     </h3>
 
@@ -573,10 +573,9 @@
 
                     <p>
                         Tool: T1 D1 — PCLNR 2020 K12 <br>
-                        Constant surface speed: G96 S200 LIMS=1500 <br>
-                        Spindle CW: M03 <br>
-                        Facing passes at Z0.25 and Z0 <br>
-                        Feed: F0.1
+                        Constant RPM: G97 S1500 M03 <br>
+                        Facing passes at Z0 <br>
+                        Feed: F0.05
                         
                     </p>
 
@@ -593,7 +592,7 @@
 
                     <h3>
 
-                        03. Contouring
+                        03. Contouring / Profile Turning
                     </h3>
 
 
@@ -620,7 +619,7 @@
 
                     <h3>
 
-                        04. Parting
+                        04. Parting / Cut-off
 
                     </h3>
 
@@ -628,10 +627,9 @@
                     <p>
 
                         Tool: T3 D1 — CFIR 2020 K06 <br>
-                        Constant RPM: G97 M03 S1200 <br>
-                        Spindle CW: M03 <br>
-                        Variable R1 and IF/GOTO loop are used for the cutting sequence. 
-                        
+                        Constant RPM: G97 M03 S600 <br>
+                        Feed: F0.1 <br>
+                        Uses R1 variable and IF/GOTO loop for the parting sequence
                     </p>
 
                 </div>

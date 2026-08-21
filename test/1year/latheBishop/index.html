@@ -492,12 +492,6 @@
         </div>
 
 
-        <p class="text-white small mt-3">
-
-            Model file:
-            <code>./model/latheBishop.gltf</code>
-
-        </p>
 
     </div>
 
@@ -548,17 +542,14 @@
 
                     <h3>
 
-                        01. Facing
+                        01. Stopper
 
                     </h3>
 
 
                     <p>
-
-                        The end face of the raw material is
-                        machined to establish a suitable
-                        reference surface and overall work
-                        length.
+                        Tool: T4 D1 — Sleeve (Stopper) <br>
+                        Workpiece positioning / stopper setting
 
                     </p>
 
@@ -575,17 +566,18 @@
 
                     <h3>
 
-                        02. Rough Turning
+                        02. Facing
 
                     </h3>
 
 
                     <p>
-
-                        Material is removed from the workpiece
-                        to approach the required external
-                        diameters and basic profile.
-
+                        Tool: T1 D1 — PCLNR 2020 K12 <br>
+                        Constant surface speed: G96 S200 LIMS=1500 <br>
+                        Spindle CW: M03 <br>
+                        Facing passes at Z0.25 and Z0 <br>
+                        Feed: F0.1
+                        
                     </p>
 
                 </div>
@@ -601,16 +593,17 @@
 
                     <h3>
 
-                        03. Profile / Finish Turning
-
+                        03. Contouring
                     </h3>
 
 
                     <p>
 
-                        Finishing cuts are used to produce the
-                        required contour, diameters and
-                        surface profile of the component.
+                        Tool: T7 D1 — MVJNR 2020 K16 <br>
+                        Constant surface speed: G96 S200 LIMS=1500 <br>
+                        Spindle CW: M03 <br>
+                        CYCLE95 stock-removal cycle <br>
+                        The contour is defined using AB:BC
 
                     </p>
 
@@ -627,17 +620,18 @@
 
                     <h3>
 
-                        04. Grooving / Detail Machining
+                        04. Parting
 
                     </h3>
 
 
                     <p>
 
-                        Special tool movements are used where
-                        required to produce grooves, steps and
-                        other detailed features.
-
+                        Tool: T3 D1 — CFIR 2020 K06 <br>
+                        Constant RPM: G97 M03 S1200 <br>
+                        Spindle CW: M03 <br>
+                        Variable R1 and IF/GOTO loop are used for the cutting sequence. 
+                        
                     </p>
 
                 </div>
@@ -645,56 +639,10 @@
             </div>
 
 
-            <!-- OPERATION 05 -->
-
-            <div class="col-md-6 mb-4">
-
-                <div class="border rounded p-4 h-100">
-
-                    <h3>
-
-                        05. Chamfering / Finishing
-
-                    </h3>
+            
 
 
-                    <p>
-
-                        Edges and selected surfaces are finished
-                        to achieve the required profile and
-                        remove unwanted sharp edges.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- OPERATION 06 -->
-
-            <div class="col-md-6 mb-4">
-
-                <div class="border rounded p-4 h-100">
-
-                    <h3>
-
-                        06. Final Inspection
-
-                    </h3>
-
-
-                    <p>
-
-                        The finished component is checked against
-                        the engineering drawing for dimensions,
-                        profile and overall quality.
-
-                    </p>
-
-                </div>
-
-            </div>
+            
 
 
         </div>
